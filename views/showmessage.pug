@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title All Messages
+	body
+		a(href='/') Add a message
+		br
+		a(href='/showmessages') See all messages
+		br
+		br
+		h3 Read all messages:
+		p.messages
+			each msg in msgs
+				h3 MESSAGE TITLE:
+				p=msg.title
+				h3 MESSAGE CONTENT:
+				p=msg.body
+				p ___

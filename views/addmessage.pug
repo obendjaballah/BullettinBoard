@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+  body
+    a(href='/') Add a message
+    br
+    a(href='/showmessage') See all messages  
+    br
+    br
+    br  
+    br  
+    form(action="/", method="post")
+      | Title:
+      br
+      input(type='text', name='msgtitle', value='Title')
+      br
+      |   message:
+      br
+      input(type='text', name='msgbody', value='Message')
+      br
+      br
+      input(type='submit', value='Submit')
+    p
+      | #{conf}
