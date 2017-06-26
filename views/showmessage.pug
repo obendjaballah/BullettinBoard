@@ -11,8 +11,10 @@ html
 		h3 Read all messages:
 		p.messages
 			each msg in msgs
-				h3 MESSAGE TITLE:
+				H1 MESSAGE
+				h4 MESSAGE TITLE:
 				p=msg.title
-				h3 MESSAGE CONTENT:
+				br
+				h4 MESSAGE CONTENT:
 				p=msg.body
 				p ___
